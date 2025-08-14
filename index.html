@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player:Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+
+<body>
+    <!--
+        ->Use local storage to store the last played song and use it to play the song when the user opens the app
+        ->Preview both Audio and Video on Big Cards`
+        ->Dark and Light Themes
+        ->SEO Friendly
+        ->Web Performance
+        ->Metrics:
+            >CLS
+            >LCP
+            >FID
+            >Lighthouse Optimized
+            >SEO Notebook
+        ->Hosting Tools and Metrics(Different Hosting Sites),Learn Hosting Properly
+
+        xmlns="http://www.w3.org/2000/svg"
+    -->
+
+    <div class="main flex bg-black">
+
+        <div class="header">
+
+            <div class="spotify-logo">
+                <a class="link-logo" href="">
+                    <img class="invert hover-pointer" src="elements/logo.svg" alt="spotify=icon" width="30px">
+                </a>
+            </div>
+
+            <div class="home-searchBar ">
+                <button class="home">
+                    <span class="home-logo">
+                        <img class="invert hover-pointer" src="elements/home.svg" alt="home-icon" width="30px">
+                    </span>
+                </button>
+                <div class="searchBar hover-pointer">
+                    <div class="src-btn">
+                        <img class="invert" src="elements/search.svg" alt="search-icon" width="25px">
+                    </div>
+
+                    <div class="src-input">
+                        <input class="bg-grey-1" type="text" placeholder="What do you want to play?">
+                    </div>
+
+                    <div class="src-box-hover" style="display: none;">Ctrl+K</div>
+                </div>
+            </div>
+
+
+            <div class="header-right-section ">
+                <button class="bg-black hover-pointer">Premium</button>
+                <button class="bg-black hover-pointer">Support</button>
+                <button class="bg-black hover-pointer">Download</button>
+
+                <div class="pipe-spacing">
+                    <p>|</p>
+                </div>
+
+                <a class="install-btn">
+                    <img class="invert hover-pointer" src="elements/install.svg" alt="" width="20px">
+
+                    <p class="hover-pointer">Install App</p>
+                </a>
+
+                <button id="signup-btn" class="signup bg-black hover-pointer">Sign up</button>
+
+                <div class="login">
+                    <button class="bg-black hover-pointer">Log in</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+
+            <div class="left-container flex bg-grad  rounded">
+                <div class="left-head">
+                    <div class="library">
+                        <header class="library-header p-1">
+                            <p>Your Library</p>
+                            <button style="background: none;">
+                                <img class="invert" src="elements/add.svg" alt="" width="15px" height="auto">
+                            </button>
+
+                        </header>
+                    </div>
+
+                </div>
+
+                <div class="left-body">
+                    <div class="recently-played p-2 flex ">
+
+                    </div>
+                </div>
+
+
+                <div class="left-footer flex">
+                    <div class="links p-1">
+
+                        <div class="link-container"><a href="">Legal</a></div>
+                        <div class="link-container"><a href="">Safety & Privacy Center</a></div>
+                        <div class="link-container"><a href="">Privacy Policy</a></div>
+                        <div class="link-container"><a href="">Cookies</a></div>
+                        <div class="link-container"><a href="">About Ads</a></div>
+                        <div class="link-container"><a href="">Accessibility</a></div>
+
+                    </div>
+
+                    <div class="language p-1">
+                        <button class="language-btn flex items-center justify-center bg-black">
+
+                            <img class="invert" src="elements/globe.svg" alt="" width="20px">
+
+                            <p>English</p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-content-right bg-grad  rounded">
+                <div class="playlists">
+                    <div class="card-collection flex ">
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="playbar flex">
+            <div class="playbar-left-section flex">
+                <div class="cover-image-playbar">
+                    <img src="elements/cover.jpg" alt="">
+                </div>
+                <div class="playbar-song-name">
+                    <p>Song</p>
+                </div>
+            </div>
+
+            <div class="playbar-middle-section flex">
+                <div class="playbar-middle-section-top  flex">
+                    <div class="shuffle-prev-btn">
+                        <button class="shuffle-btn">
+                            <img class="invert" src="elements/shuffle.svg" alt="" width="30px">
+                        </button>
+
+                        <button class="prev-btn">
+                            <img class="invert" src="elements/prevsong.svg" alt="" width="30px">
+                        </button>
+                    </div>
+
+                    <div class="play-pause-btn">
+                        <button>
+                            <img class="play-btn-playbar  show invert hover-pointer" src="elements/play.svg" alt=""
+                                width="20px" style="margin: .5px 0 0 1px;">
+                            <img class="pause-btn-playbar hide hover-pointer" src="elements/pause.svg" alt=""
+                                width="20px">
+                        </button>
+                    </div>
+
+                    <div class="next-repeat-btn">
+                        <button class="next-btn">
+                            <img class="invert" src="elements/nextsong.svg" alt="" width="30px">
+                        </button>
+
+                        <button class="repeat-btn">
+                            <img class="invert" src="elements/repeat.svg" alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playbar-middle-section-bottom flex">
+                    <div class="current-time">
+                        0:00
+                    </div>
+
+
+                    <div class="seekbar color-bar">
+                        <div class="circle-seek"></div>
+                    </div>
+
+
+                    <div class="total-time">
+                        0:00
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="playbar-right-section flex">
+                <div class="player-right-section-container">
+                    <!-- <button class="now-playing"></button>
+                    <button class="lyrics"></button>
+                    <button class="queue"></button>
+                    <button class="connect-to-device"></button>
+-->
+                    <div class="volume-container">
+                        <button class="volume-icon">
+                            <img class="invert" src="elements/volume.svg" alt="" width="30px">
+                        </button>
+                        <input type="range" class="volume-slider hover-pointer" min="0" max="100" value="50">
+                    </div>
+                    <!--
+                    <button class="miniplayer"></button>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
