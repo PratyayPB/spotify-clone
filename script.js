@@ -27,7 +27,7 @@ var showPausehidePlay = function () {
 //fetches and returns all songs() from the directory
 const fetchSongs = async (getFolder) => {
   let response = await fetch(
-    `http://127.0.0.1:5501/spotifyCloneSongsDir/${getFolder}`,
+    `https://pratyaypb.github.io/spotify-clone/spotifyCloneSongsDir/${getFolder}`,
   );
   let data = await response.text();
 
@@ -46,7 +46,9 @@ const fetchSongs = async (getFolder) => {
 
 //displays all the albums
 async function displayAlbums() {
-  let response = await fetch(`http://127.0.0.1:5501/spotifyCloneSongsDir`);
+  let response = await fetch(
+    `https://pratyaypb.github.io/spotify-clone/spotifyCloneSongsDir`,
+  );
   let data = await response.text();
   let div = document.createElement("div");
   div.innerHTML = data; //populates the div with the fetched data
@@ -63,14 +65,14 @@ async function displayAlbums() {
       let folderName = parts[parts.length - 1]; //extracts the folder name from Url
 
       let response = await fetch(
-        `http://127.0.0.1:5501/spotifyCloneSongsDir/${folderName}/info.json`,
+        `https://pratyaypb.github.io/spotify-clone/spotifyCloneSongsDir/${folderName}/info.json`,
       );
       let data = await response.json();
 
       //populates the cardContainer with the fetched data
       cardContainer.innerHTML += `<div data-folder="${folderName}" class="card-container flex-cards bg-grad-2 ">
                             <div class="card relative-pos">
-                                <div class="song-cover-img relative-pos"><img src="/spotifyCloneSongsDir/${folderName}/cover.jpg" alt="">
+                                <div class="song-cover-img relative-pos"><img src="/spotify-clone/spotifyCloneSongsDir/${folderName}/cover.jpg" alt="">
                                 </div>
                                 <div class="play-btn absolute-pos"><img class="invert hover-pointer" src="elements/play.svg" alt="">
                                 </div>
@@ -175,7 +177,9 @@ function timeUpdate(song) {
 
 async function searchSongs(query) {
   //const songNameQuery = query.value.toLowerCase();
-  let response = await fetch(`http://127.0.0.1:5500/spotifyCloneSongsDir`);
+  let response = await fetch(
+    `https://pratyaypb.github.io/spotify-clone/spotifyCloneSongsDir`,
+  );
   let data = await response.text();
   let div = document.createElement("div");
   div.innerHTML = data; //populates the div with the fetched data
