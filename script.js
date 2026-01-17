@@ -2,6 +2,7 @@
 let recentsContainer = document.querySelector(".recently-played"); // Container to display songs in library
 let currentSong;
 let folderName;
+let currentCoverPic;
 let songs = [];
 
 //Attach event listeners to play,pause,prev and next buttons
@@ -26,7 +27,7 @@ var showPausehidePlay = function () {
 //fetches and returns all songs() from the directory
 const fetchSongs = async (getFolder) => {
   let response = await fetch(
-    `http://127.0.0.1:5501/spotifyCloneSongsDir/${getFolder}`
+    `http://127.0.0.1:5501/spotifyCloneSongsDir/${getFolder}`,
   );
   let data = await response.text();
 
@@ -62,20 +63,21 @@ async function displayAlbums() {
       let folderName = parts[parts.length - 1]; //extracts the folder name from Url
 
       let response = await fetch(
-        `http://127.0.0.1:5501/spotifyCloneSongsDir/${folderName}/info.json`
+        `http://127.0.0.1:5501/spotifyCloneSongsDir/${folderName}/info.json`,
       );
       let data = await response.json();
 
       //populates the cardContainer with the fetched data
-      cardContainer.innerHTML += `<div data-folder="${folderName}" class="card-container flex bg-grad-2 ">
+      cardContainer.innerHTML += `<div data-folder="${folderName}" class="card-container flex-cards bg-grad-2 ">
                             <div class="card relative-pos">
                                 <div class="song-cover-img relative-pos"><img src="/spotifyCloneSongsDir/${folderName}/cover.jpg" alt="">
                                 </div>
                                 <div class="play-btn absolute-pos"><img class="invert hover-pointer" src="elements/play.svg" alt="">
                                 </div>
-                            </div>
-                            <p class="song-name">${data.title}</p>
+                                <p class="song-name">${data.title}</p>
                             <p class="artist-name">${data.description}</p>
+                            </div>
+                            
                         </div>`;
     }
   }
@@ -83,12 +85,15 @@ async function displayAlbums() {
     e.addEventListener("click", async (event) => {
       folderName = event.currentTarget.dataset.folder;
       songs = await fetchSongs(folderName);
-      displaySongs(songs);
+      currentCoverPic = "spotifyCloneSongsDir/" + folderName + "/cover.jpg";
+      document.querySelector(".cover-image-playbar img").src = currentCoverPic;
+      displaySongs(songs, folderName);
       if (
         event.target.matches(".play-btn") ||
         event.target.matches(".play-btn img")
       ) {
         playSong(songs[0].querySelector("a").getAttribute("href"));
+
         showPausehidePlay();
       }
     });
@@ -96,7 +101,7 @@ async function displayAlbums() {
 }
 
 //displays the fetched songs in the library(recentsContainer)
-async function displaySongs(songs) {
+async function displaySongs(songs, folderName) {
   recentsContainer.innerHTML = ""; // Clear previous content
   recentsContainer.innerHTML += `<ul class="song-list-recents flex"></ul>`; // Add a new ul element to hold the songs
 
@@ -106,7 +111,7 @@ async function displaySongs(songs) {
 
     recentsContainer.firstChild.innerHTML += ` <div class="recents-song-container bg-grey-2 flex">
         <div class="cover-and-details-recents flex">
-                     <img src="elements/cover.jpg" alt="" width="50px" style="border-radius: 5px;">
+                     <img src="spotifyCloneSongsDir/${folderName}/cover.jpg" alt="" width="50px" height="50px" style="border-radius: 5px;">
                       <span class="song-info-recents">
                       <p class="song-name-recents">${getTitle}</p>
                       </span>
@@ -132,6 +137,7 @@ function playSong(song) {
   timeUpdate(currentSong); // Call the timeUpdate function to update the play bar
 
   document.querySelector(".playbar-song-name p").innerText = song.split("/")[3];
+  // document.querySelector(".cover-image-playbar img").src =
   /*
   var audio = new Audio(song);
   console.log(song);
@@ -151,22 +157,19 @@ function secondsToMinutesSeconds(seconds) {
 //time update event listener to update the play bar
 function timeUpdate(song) {
   song.addEventListener("timeupdate", () => {
-    document.querySelector(
-      ".current-time"
-    ).innerText = `${secondsToMinutesSeconds(song.currentTime)}`;
-    document.querySelector(
-      ".total-time"
-    ).innerText = `${secondsToMinutesSeconds(song.duration)}`;
+    document.querySelector(".current-time").innerText =
+      `${secondsToMinutesSeconds(song.currentTime)}`;
+    document.querySelector(".total-time").innerText =
+      `${secondsToMinutesSeconds(song.duration)}`;
 
     document.querySelector(".circle-seek").style = `left: ${
       (song.currentTime / song.duration) * 100
     }%`;
     document.querySelector(".seekbar").classList.remove("color-bar");
-    document.querySelector(
-      ".seekbar"
-    ).style = `background: linear-gradient(to right, #1ED760 , #282828 ${
-      (song.currentTime / song.duration) * 100
-    }%)`;
+    document.querySelector(".seekbar").style =
+      `background: linear-gradient(to right, #1ED760 , #282828 ${
+        (song.currentTime / song.duration) * 100
+      }%)`;
   });
 }
 
@@ -212,7 +215,7 @@ async function searchSongs(query) {
           ) {
             //Get the song title of the clicked event
             const recentsSongContainer = event.target.closest(
-              ".recents-song-container"
+              ".recents-song-container",
             );
             // Then find the <p> element with the title
             const songTitleElement =
@@ -260,7 +263,7 @@ async function main() {
     ) {
       //Get the song title of the clicked event
       const recentsSongContainer = event.target.closest(
-        ".recents-song-container"
+        ".recents-song-container",
       );
       // Then find the <p> element with the title
       const songTitleElement =

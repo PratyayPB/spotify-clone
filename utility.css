@@ -1,6 +1,23 @@
 .flex {
   display: flex;
 }
+.flex-cards {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+
+  /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* 5 rows */
+  grid-template-rows: repeat(5, auto);
+
+  /* spacing between items */
+  gap: 16px;
+}
 
 .items-center {
   align-items: center;
@@ -92,4 +109,13 @@
 
 .hover-pointer {
   cursor: pointer;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.max-w-screen {
+  max-width: 100vw;
 }

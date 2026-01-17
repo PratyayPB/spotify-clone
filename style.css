@@ -103,12 +103,17 @@ Micro Animations and transitions
   border-radius: 30px;
 }
 
+/* MAIN CONTENT */
 .main-content {
   display: flex;
   flex-direction: row;
   gap: 5px;
   margin-top: 2px;
   height: 80vh;
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .left-container {
@@ -170,16 +175,18 @@ Micro Animations and transitions
   flex-direction: row;
   gap: 15px;
   overflow-x: scroll;
+  overflow-y: scroll;
   scrollbar-width: none;
   scroll-behavior: smooth;
   width: 75vw;
   margin: 30px;
+  scrollbar-width: none;
 }
 
 .card-container {
   flex-direction: column;
   width: auto;
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
   scroll-behavior: smooth;
 }
@@ -188,13 +195,22 @@ Micro Animations and transitions
 }
 
 .card {
-  width: 170px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease-out;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 6px;
 }
 
 .song-cover-img img {
   width: 100%;
   border-radius: 5px;
   object-fit: contain;
+  margin-bottom: 5px;
 }
 .play-btn {
   background-color: #1ed760;
@@ -219,7 +235,7 @@ Micro Animations and transitions
 }
 
 .song-name {
-  margin: 5px 0 10px;
+  margin: 5px 0 4px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -247,6 +263,10 @@ Micro Animations and transitions
 .playbar-song-name p:first-child {
   font-size: 14px;
   font-weight: 500;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .playbar button {
@@ -374,13 +394,14 @@ Micro Animations and transitions
 }
 
 /*recents-library*/
-
 .recently-played {
   height: 45vh;
   gap: 15px;
+  max-width: 30vw;
   flex-direction: column;
   position: relative;
   overflow-y: scroll;
+  overflow-x: scroll;
   scrollbar-width: none;
 }
 
@@ -410,6 +431,10 @@ Micro Animations and transitions
 .song-name-recents {
   font-size: 14px;
   font-weight: 500;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .play-btn-recents {
