@@ -27,7 +27,7 @@ var showPausehidePlay = function () {
 //fetches and returns all songs() from the directory
 const fetchSongs = async (getFolder) => {
   let response = await fetch(
-    `https://symphonious-cat-8d3ab4.netlify.app/spotifyCloneSongsDir/${getFolder}`,
+    `https://spotify-clone-pratyay.netlify.app//spotifyCloneSongsDir/${getFolder}`,
   );
   let data = await response.text();
 
@@ -46,7 +46,9 @@ const fetchSongs = async (getFolder) => {
 
 //displays all the albums
 async function displayAlbums() {
-  let response = await fetch(`http://127.0.0.1:5501/spotifyCloneSongsDir`);
+  let response = await fetch(
+    `https://spotify-clone-pratyay.netlify.app/spotifyCloneSongsDir`,
+  );
   let data = await response.text();
   let div = document.createElement("div");
   div.innerHTML = data; //populates the div with the fetched data
