@@ -27,7 +27,7 @@ var showPausehidePlay = function () {
 //fetches and returns all songs() from the directory
 const fetchSongs = async (getFolder) => {
   let response = await fetch(
-    `http://127.0.0.1:5501/spotifyCloneSongsDir/${getFolder}`,
+    `https://symphonious-cat-8d3ab4.netlify.app/spotifyCloneSongsDir/${getFolder}`,
   );
   let data = await response.text();
 
