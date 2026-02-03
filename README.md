@@ -24,6 +24,17 @@
 - **JavaScript (Vanilla JS)**  
 
 ---
+📸 Preview
+
+The UI closely resembles Spotify with a modern dark theme and intuitive layout.
+<br>
+<br>
+<img width="1919" height="970" alt="Screenshot 2026-02-03 214721" src="https://github.com/user-attachments/assets/ec3c837c-5d47-4ebc-8170-98af62649813" />
+<img width="1919" height="967" alt="Screenshot 2026-02-03 214705" src="https://github.com/user-attachments/assets/e4428bdd-a691-4a83-81cd-5e12d1bbfc97" />
+
+
+---
 📄 License
 This project is for educational purposes only and is not affiliated with Spotify.
+
 
