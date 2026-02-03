@@ -2,7 +2,7 @@
 
 **Spotify Clone** built using modern frontend technologies. This project replicates the core UI and basic playback experience of Spotify, focusing on clean design, responsiveness, and smooth user interaction.
 
-🔗 **Live Demo:** https://spotify-clone-pratyay.netlify.app/  
+🔗 **Live Demo:** https://spotify-clone-self-seven.vercel.app/
 📦 **Repository:** https://github.com/PratyayPB/spotify-clone  
 
 ---
