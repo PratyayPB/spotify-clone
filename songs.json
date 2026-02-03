@@ -1,0 +1,346 @@
+﻿{
+    "albums":  [
+                   {
+                       "title":  "2G Era Hits",
+                       "description":  "Hits from the 2G era",
+                       "id":  "2g-era-hits",
+                       "cover":  "./spotifyCloneSongsDir/2G Era Hits/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/2G Era Hits/Aa Bhi Jaa Sanam Prince 128 Kbps.mp3",
+                                         "title":  "Aa Bhi Jaa Sanam Prince 128 Kbps"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/2G Era Hits/Desi Kalakaar.mp3",
+                                         "title":  "Desi Kalakaar"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/2G Era Hits/Lak 28 Kudi Da.mp3",
+                                         "title":  "Lak 28 Kudi Da"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Assamese Songs",
+                       "description":  "Assamese Songs for you",
+                       "id":  "assamese",
+                       "cover":  "./spotifyCloneSongsDir/Assamese/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Assamese/Zubeen_Garg_-_Anuradha_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_-_Anuradha_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Assamese/Zubeen_Garg_Deeplina_Deka_-_Bhobai_Nasilu_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_Deeplina_Deka_-_Bhobai_Nasilu_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Assamese/Zubeen_Garg_Jonki_-_Mayabini_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_Jonki_-_Mayabini_(mp3.pm)"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Atif Aslam",
+                       "description":  "Hits by Atif Aslam",
+                       "id":  "atif-aslam",
+                       "cover":  "./spotifyCloneSongsDir/Atif Aslam/cover.jpg",
+                       "songs":  {
+                                     "src":  "./spotifyCloneSongsDir/Atif Aslam/Aa Bhi Jaa Sanam Prince 128 Kbps.mp3",
+                                     "title":  "Aa Bhi Jaa Sanam Prince 128 Kbps"
+                                 }
+                   },
+                   {
+                       "title":  "Chartbusters",
+                       "description":  "Songs that broke the internet",
+                       "id":  "chartbusters",
+                       "cover":  "./spotifyCloneSongsDir/Chartbusters/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Chartbusters/Desi Kalakaar.mp3",
+                                         "title":  "Desi Kalakaar"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Chartbusters/edsheeran._-_photograph_(mp3.pm).mp3",
+                                         "title":  "edsheeran._-_photograph_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Chartbusters/Sapphire.mp3",
+                                         "title":  "Sapphire"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Chartbusters/Zubeen_Garg_Jonki_-_Mayabini_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_Jonki_-_Mayabini_(mp3.pm)"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Diljit Dosanjh",
+                       "description":  "Hits by Diljit Dosanjh",
+                       "id":  "diljit-dosanjh",
+                       "cover":  "./spotifyCloneSongsDir/Diljit Dosanjh/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Diljit Dosanjh/Lak 28 Kudi Da.mp3",
+                                         "title":  "Lak 28 Kudi Da"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Diljit Dosanjh/Lemonade.mp3",
+                                         "title":  "Lemonade"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Ed Sheeran",
+                       "description":  "Hits by Ed Sheeran",
+                       "id":  "ed-sheeran",
+                       "cover":  "./spotifyCloneSongsDir/Ed Sheeran/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Ed Sheeran/Castle On The Hill.mp3",
+                                         "title":  "Castle On The Hill"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Ed Sheeran/Drive.mp3",
+                                         "title":  "Drive"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Ed Sheeran/edsheeran._-_photograph_(mp3.pm).mp3",
+                                         "title":  "edsheeran._-_photograph_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Ed Sheeran/EdSheeran_-_I_See_Fire_KygoRemix_(mp3.pm).mp3",
+                                         "title":  "EdSheeran_-_I_See_Fire_KygoRemix_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Ed Sheeran/edsheeran_-_shivers_(mp3.pm).mp3",
+                                         "title":  "edsheeran_-_shivers_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Ed Sheeran/Sapphire.mp3",
+                                         "title":  "Sapphire"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "English Songs",
+                       "description":  "English Songs for you",
+                       "id":  "english",
+                       "cover":  "./spotifyCloneSongsDir/English/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/Castle On The Hill.mp3",
+                                         "title":  "Castle On The Hill"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/Drive.mp3",
+                                         "title":  "Drive"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/edsheeran._-_photograph_(mp3.pm).mp3",
+                                         "title":  "edsheeran._-_photograph_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/EdSheeran_-_I_See_Fire_KygoRemix_(mp3.pm).mp3",
+                                         "title":  "EdSheeran_-_I_See_Fire_KygoRemix_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/edsheeran_-_shivers_(mp3.pm).mp3",
+                                         "title":  "edsheeran_-_shivers_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm) (1).mp3",
+                                         "title":  "Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm) (1)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm).mp3",
+                                         "title":  "Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/Paul_Van_Dyk_-_Linkin_Park_-_Burn_it_Down_cover_(mp3.pm).mp3",
+                                         "title":  "Paul_Van_Dyk_-_Linkin_Park_-_Burn_it_Down_cover_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/English/Sapphire.mp3",
+                                         "title":  "Sapphire"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Hindi Songs",
+                       "description":  "Hindi Songs for you",
+                       "id":  "hindi",
+                       "cover":  "./spotifyCloneSongsDir/Hindi/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Hindi/94 - Sajde (Khatta Meetha) - K.K.-(Mr-Jat.in).mp3",
+                                         "title":  "94 - Sajde (Khatta Meetha) - K.K.-(Mr-Jat.in)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Hindi/98 - Touch Me (Dhoom 2) - K.K.-(Mr-Jat.in).mp3",
+                                         "title":  "98 - Touch Me (Dhoom 2) - K.K.-(Mr-Jat.in)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Hindi/Aa Bhi Jaa Sanam Prince 128 Kbps.mp3",
+                                         "title":  "Aa Bhi Jaa Sanam Prince 128 Kbps"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Hindi/Dil Tu Hi Bataa Krrish 3 128 Kbps.mp3",
+                                         "title":  "Dil Tu Hi Bataa Krrish 3 128 Kbps"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "KK",
+                       "description":  "Hits by KK",
+                       "id":  "kk",
+                       "cover":  "./spotifyCloneSongsDir/KK/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/KK/94 - Sajde (Khatta Meetha) - K.K.-(Mr-Jat.in).mp3",
+                                         "title":  "94 - Sajde (Khatta Meetha) - K.K.-(Mr-Jat.in)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/KK/98 - Touch Me (Dhoom 2) - K.K.-(Mr-Jat.in).mp3",
+                                         "title":  "98 - Touch Me (Dhoom 2) - K.K.-(Mr-Jat.in)"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Linkin Park",
+                       "description":  "Hits by Linkin Park",
+                       "id":  "linkin-park",
+                       "cover":  "./spotifyCloneSongsDir/Linkin Park/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Linkin Park/Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm) (1).mp3",
+                                         "title":  "Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm) (1)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Linkin Park/Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm).mp3",
+                                         "title":  "Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Linkin Park/Paul_Van_Dyk_-_Linkin_Park_-_Burn_it_Down_cover_(mp3.pm).mp3",
+                                         "title":  "Paul_Van_Dyk_-_Linkin_Park_-_Burn_it_Down_cover_(mp3.pm)"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Melodies",
+                       "description":  "Melodies for you",
+                       "id":  "melodies",
+                       "cover":  "./spotifyCloneSongsDir/Melodies/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Melodies/94 - Sajde (Khatta Meetha) - K.K.-(Mr-Jat.in).mp3",
+                                         "title":  "94 - Sajde (Khatta Meetha) - K.K.-(Mr-Jat.in)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Melodies/EdSheeran_-_I_See_Fire_KygoRemix_(mp3.pm).mp3",
+                                         "title":  "EdSheeran_-_I_See_Fire_KygoRemix_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Melodies/edsheeran_-_shivers_(mp3.pm).mp3",
+                                         "title":  "edsheeran_-_shivers_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Melodies/Zubeen_Garg_Deeplina_Deka_-_Bhobai_Nasilu_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_Deeplina_Deka_-_Bhobai_Nasilu_(mp3.pm)"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Punjabi Pop",
+                       "description":  "Punjabi Pop for you",
+                       "id":  "punjabi-pop",
+                       "cover":  "./spotifyCloneSongsDir/Punjabi Pop/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Punjabi Pop/Desi Kalakaar.mp3",
+                                         "title":  "Desi Kalakaar"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Punjabi Pop/Lak 28 Kudi Da.mp3",
+                                         "title":  "Lak 28 Kudi Da"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Punjabi Pop/Lemonade.mp3",
+                                         "title":  "Lemonade"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Punjabi Pop/Sifar Safar.mp3",
+                                         "title":  "Sifar Safar"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Punjabi Pop/Tauba Tauba.mp3",
+                                         "title":  "Tauba Tauba"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Rocks",
+                       "description":  "Rocks for you",
+                       "id":  "rocks",
+                       "cover":  "./spotifyCloneSongsDir/Rocks/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Rocks/Drive.mp3",
+                                         "title":  "Drive"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Rocks/Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm) (1).mp3",
+                                         "title":  "Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm) (1)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Rocks/Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm).mp3",
+                                         "title":  "Linkin_park_-_Crawling_rus_cover_by_Aleksandr_Anisimov_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Rocks/Paul_Van_Dyk_-_Linkin_Park_-_Burn_it_Down_cover_(mp3.pm).mp3",
+                                         "title":  "Paul_Van_Dyk_-_Linkin_Park_-_Burn_it_Down_cover_(mp3.pm)"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Yo Yo Honey Singh",
+                       "description":  "Hits by Yo Yo Honey Singh",
+                       "id":  "yo-yo-honey-singh",
+                       "cover":  "./spotifyCloneSongsDir/Yo Yo Honey Singh/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Yo Yo Honey Singh/Desi Kalakaar.mp3",
+                                         "title":  "Desi Kalakaar"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Yo Yo Honey Singh/Lak 28 Kudi Da.mp3",
+                                         "title":  "Lak 28 Kudi Da"
+                                     }
+                                 ]
+                   },
+                   {
+                       "title":  "Zubeen Garg",
+                       "description":  "Legendary hits by Zubeen Garg",
+                       "id":  "zubeen-garg",
+                       "cover":  "./spotifyCloneSongsDir/Zubeen Garg/cover.jpg",
+                       "songs":  [
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Zubeen Garg/Dil Tu Hi Bataa Krrish 3 128 Kbps.mp3",
+                                         "title":  "Dil Tu Hi Bataa Krrish 3 128 Kbps"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Zubeen Garg/Zubeen_Garg_-_Anuradha_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_-_Anuradha_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Zubeen Garg/Zubeen_Garg_Deeplina_Deka_-_Bhobai_Nasilu_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_Deeplina_Deka_-_Bhobai_Nasilu_(mp3.pm)"
+                                     },
+                                     {
+                                         "src":  "./spotifyCloneSongsDir/Zubeen Garg/Zubeen_Garg_Jonki_-_Mayabini_(mp3.pm).mp3",
+                                         "title":  "Zubeen_Garg_Jonki_-_Mayabini_(mp3.pm)"
+                                     }
+                                 ]
+                   }
+               ]
+}
